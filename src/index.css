@@ -1,13 +1,73 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  background-color: #F4F7FC;
+ 
+/* 
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Sans', sans-serif; */
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Playpen Sans', cursive;
+    font-family: 'Roboto', sans-serif; */
+  
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+.box{
+ background-color: white;
+	border: 1px solid gray;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+
+
+.multi-select {
+  display: flex;
+  flex-direction: column;
+  max-height: 200px; /* Adjust the height as needed */
+  overflow-y: auto;
+  border: 1px solid #ccc;
+}
+
+.selected-options {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 5px;
+}
+
+.selected-option {
+  background-color: #007bff;
+  color: white;
+  padding: 2px 5px;
+  margin: 2px;
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+}
+
+.selected-option button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.options-list {
+  flex-grow: 1;
+  padding: 5px;
+}
+
+.option {
+  padding: 5px;
+  cursor: pointer;
+}
+
+.option.selected {
+  background-color: #007bff;
+  color: white;
 }
